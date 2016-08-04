@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>servlet login</title>
 </head>
 <body>
-<p>这里是login.jsp</p>
+<form  method="post" action="<%=request.getContextPath()%>/validate">
+          user name:<input type="text" value="lemon" name="name"></input>
+          password:<input type="password" value="123456" name="password"></input>
+         <input type="submit" value="submit"></input>
+</form>
 </body>
 </html>

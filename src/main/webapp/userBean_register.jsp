@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:useBean id="car" class="webtest.Car"></jsp:useBean>
+<jsp:useBean id="car" class="entity.Car"></jsp:useBean>
 <jsp:setProperty property="name" name="car"/>
 <jsp:setProperty property="price" name="car"/>
 

@@ -25,5 +25,6 @@ if (counter==null){
 
 
 %>
+<%=request.getContextPath() %>
 </body>
 </html>
