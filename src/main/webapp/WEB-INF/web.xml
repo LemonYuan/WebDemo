@@ -23,10 +23,20 @@
   <servlet-name>loginServlet</servlet-name>
   <servlet-class>servlet.loginServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>dateproccess</servlet-name>
+  	<display-name>dateproccess</display-name>
+  	<description></description>
+  	<servlet-class>servlet.dateproccess</servlet-class>
+  </servlet>
   
   <servlet-mapping>
      <servlet-name>loginServlet</servlet-name>
      <url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>dateproccess</servlet-name>
+  	<url-pattern>/dateproccess</url-pattern>
   </servlet-mapping>
 <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
