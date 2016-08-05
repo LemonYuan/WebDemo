@@ -8,7 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%=request.getAttribute("msg") %>
-<a href="login.jsp">please login again</a>
+<%
+String name=request.getParameter("name");
+int password=Integer.parseInt(request.getParameter("password").toString());
+%>
+login successfully
+<%
+out.print(name);
+out.print(password);
+
+%>
 </body>
 </html>

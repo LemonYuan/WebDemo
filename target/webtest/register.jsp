@@ -7,5 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+    <%
+    String name =request.getParameter("name");
+    String price=request.getParameter("price");
+    out.print("註冊名："+name+"</br>");
+    out.print("註冊價格："+price);
+    
+    
+    %>
 </body>
 </html>

@@ -8,7 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%=request.getAttribute("msg") %>
-<a href="login.jsp">please login again</a>
+<%
+
+      if(request.getParameter("account").equals("lemon")&&request.getParameter("password").equals("123456"))
+      {
+    	  session.setAttribute("username", request.getParameter("account"));
+    	  response.sendRedirect("welcome.jsp");
+      }
+%>
 </body>
 </html>

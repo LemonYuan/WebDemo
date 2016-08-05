@@ -12,6 +12,5 @@
           password:<input type="password" value="123456" name="password"></input>
          <input type="submit" value="submit"></input>
 </form>
-<%=request.getContextPath()%>
 </body>
 </html>

@@ -5,10 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Insert title here</title>
+<title>This is login page</title>
 </head>
 <body>
-<%=request.getAttribute("msg") %>
-<a href="login.jsp">please login again</a>
+  <form action="register.jsp">
+  account:<input type="text" value="lemon" name="account"></input>
+  password:<input type="password" value="123456"  name="password"></input>
+      <input type="submit" value="submit"></input>
+  </form>
 </body>
 </html>
