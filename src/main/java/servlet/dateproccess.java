@@ -1,6 +1,5 @@
 package servlet;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -43,7 +42,8 @@ public class dateproccess extends HttpServlet {
 	        String password =request.getParameter("password");
 	        Configuration cfg=new Configuration();
 	        cfg.setServletContextForTemplateLoading(getServletContext(), "templates");
-
+	        cfg.setDefaultEncoding("UTF-8");
+	        cfg.setOutputEncoding("UTF-8");
 	        response.setCharacterEncoding("UTF-8");
 	        System.out.println(getServletContext());
 	        Template t=cfg.getTemplate("first_template.ftl");

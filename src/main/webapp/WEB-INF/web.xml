@@ -9,20 +9,18 @@
   	<description></description>
   	<filter-class>filter.FilterOne</filter-class>
   </filter>
+  
   <filter-mapping>
   	<filter-name>FilterOne</filter-name>
   	<url-pattern>/FilterOne</url-pattern>
   </filter-mapping>
-  
-  <servlet>
-  <servlet-name>HelloWorld</servlet-name>
-  <servlet-class>servlet.HelloServlet</servlet-class>
-  </servlet>
+
   
   <servlet>
   <servlet-name>loginServlet</servlet-name>
   <servlet-class>servlet.loginServlet</servlet-class>
   </servlet>
+  
   <servlet>
   	<servlet-name>dateproccess</servlet-name>
   	<display-name>dateproccess</display-name>
@@ -34,6 +32,7 @@
      <servlet-name>loginServlet</servlet-name>
      <url-pattern>/validate</url-pattern>
   </servlet-mapping>
+  
   <servlet-mapping>
   	<servlet-name>dateproccess</servlet-name>
   	<url-pattern>/dateproccess</url-pattern>
